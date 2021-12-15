@@ -57,7 +57,11 @@ class User:
 
 
 def send_message(message: str, receiver: User, sender: User, encoding: str):
+    if receiver is None:
+        receiver = User()
+    user_dictionary[receiver.id] = receiver
     encoded_message = Message(encode_message(message, encoding, receiver.public_key_RSA), sender, encoding)
+
     receiver.receive_message(encoded_message)
 
 
