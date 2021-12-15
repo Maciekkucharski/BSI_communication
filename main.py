@@ -7,12 +7,12 @@ USER_ITERATOR = 0
 
 encryption_dictionary = {
     "RSA": rsa.encrypt,
-    "ECC": "dupa"
+    "ECC": ""
 }
 
 decryption_dictionary = {
     "RSA": rsa.decrypt,
-    "ECC": "dupa"
+    "ECC": ""
 }
 
 
@@ -79,19 +79,3 @@ while True:
 
 
 
-
-
-
-
-
-
-
-
-# class ChatRoom:
-#     def __init__(self, user_one: User, user_two: User):
-#         global CHATROOM_ITERATOR
-#         self.participants = [user_one, user_two]
-#         self.id = CHATROOM_ITERATOR
-#         self.user_one_mess = None
-#         self.user_two_mess = None
-#         CHATROOM_ITERATOR += 1
