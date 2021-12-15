@@ -63,13 +63,13 @@ user class
 
     def decode_message(self, message: bytes):
 '''
-decodes message using user's private key
+decodes message with user's private key
 
 Inputs:
 message - encoded message
 
 Returns:
-decoded plain text mssage
+decoded plain text message
 
 '''
         decoded_message = rsa.decrypt(message, self.private_key_RSA)
